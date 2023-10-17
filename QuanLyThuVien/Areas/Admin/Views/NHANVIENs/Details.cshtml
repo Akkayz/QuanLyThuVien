@@ -1,0 +1,96 @@
+﻿@model QuanLyThuVien.Models.NHANVIEN
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h4>THÔNG TIN NHÂN VIÊN</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.CHINHANH.TenCN)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.CHINHANH.TenCN)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.LOAINHANVIEN.TenLoaiNV)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.LOAINHANVIEN.TenLoaiNV)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.HoTenNV)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.HoTenNV)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.CMND)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.CMND)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.SDT)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.SDT)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.DiaChi)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.DiaChi)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.HinhAnh)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.HinhAnh)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.UserName)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.UserName)
+            </dd>
+
+            <dt class="col-sm-3">
+                @Html.DisplayNameFor(model => model.Password)
+            </dt>
+            <dd class="col-sm-9">
+                @Html.DisplayFor(model => model.Password)
+            </dd>
+        </dl>
+    </div>
+    <p class="text-center mt-3">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.MaNV }, new { @class = "btn btn-primary" }) |
+        @Html.ActionLink("Back to List", "Index", new { @class = "btn btn-secondary" })
+    </p>
+</body>
+</html>
